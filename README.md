@@ -24,15 +24,12 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-1. Create a GitHub repository named `YOUR-USERNAME.github.io`.
-2. Upload this project to the repository and push the default branch as `main`.
-3. In GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **GitHub Actions** as the source.
-5. The included workflow builds and deploys the site whenever you push to `main`.
-6. Your site will be available at `https://YOUR-USERNAME.github.io/`.
+1. Rename the GitHub repository to `iamdaddyalvin.github.io` in **Settings → General → Repository name**.
+2. In **Settings → Pages**, choose **GitHub Actions** as the build and deployment source.
+3. Push this project to the `main` branch. The included workflow builds and deploys the site on each push.
+4. Your site will be available at `https://iamdaddyalvin.github.io/`.
 
-This Vite configuration uses `base: '/'`, appropriate for a `YOUR-USERNAME.github.io` user site.
-If you instead deploy to a project repository such as `portfolio`, change `base` in `vite.config.js` to `'/portfolio/'`.
+Vite and public asset links are configured for the root of this user site.
 
 ## Resume
 

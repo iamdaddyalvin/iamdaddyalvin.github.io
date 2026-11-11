@@ -6,6 +6,8 @@ import {
   Database, Cloud, Users, Layers, ExternalLink, Sun, Moon, CheckCircle2
 } from 'lucide-react'
 
+const resumeUrl = `${import.meta.env.BASE_URL}Alvin-Paderes-CV.pdf`
+
 const experience = [
   {
     role: 'Senior QA Automation Engineer',
@@ -148,7 +150,7 @@ export default function App() {
         </nav>
         <div className="header-actions">
           <button className="icon-button theme-toggle" aria-label="Toggle color theme" onClick={() => setLight(!light)}>{light ? <Moon size={17}/> : <Sun size={17}/>}</button>
-          <a className="header-cta" href="/Alvin-Paderes-CV.pdf" download>Resume <Download size={15}/></a>
+          <a className="header-cta" href={resumeUrl} download>Resume <Download size={15}/></a>
           <button className="icon-button menu-toggle" aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X/> : <Menu/>}</button>
         </div>
       </header>
@@ -161,7 +163,7 @@ export default function App() {
             <motion.p className="hero-intro" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .28, duration: .6 }}>I’m Alvin Paderes, a Senior Software Development Engineer in Test focused on scalable test automation, software quality engineering, and AI-assisted workflows.</motion.p>
             <motion.div className="hero-actions" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .4 }}>
               <a className="button button-primary" href="#projects">Explore my work <ArrowUpRight size={17}/></a>
-              <a className="button button-ghost" href="/Alvin-Paderes-CV.pdf" download>Download CV <Download size={16}/></a>
+              <a className="button button-ghost" href={resumeUrl} download>Download CV <Download size={16}/></a>
             </motion.div>
             <motion.div className="social-row" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .55 }}>
               <a href="https://ph.linkedin.com/in/alvinpaderes" target="_blank" rel="noreferrer"><Linkedin size={17}/> LinkedIn <ArrowUpRight size={13}/></a>
